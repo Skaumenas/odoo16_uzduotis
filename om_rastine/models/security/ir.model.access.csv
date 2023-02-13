@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+om_rastine.access_rastines_dokumentas,access_rastines_dokumentas,om_rastine.model_rastines_dokumentas,base.group_user,1,1,1,1

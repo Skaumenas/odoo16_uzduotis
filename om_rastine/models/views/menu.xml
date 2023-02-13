@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem id="menu_dokumentai_root"
+              name="Dokumentai"
+              sequence="10"/>
+
+</odoo>

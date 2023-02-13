@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+    <record id="view_rastines_dokumentas_form" model="ir.ui.view">
+        <field name="name">rastines.dokumentas.form</field>
+        <field name="model">rastines.dokumentas</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="pavadinimas"/>
+                        <field name="aprasymas"/>
+                        <field name="imone_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_rastines_dokumentas_tree" model="ir.ui.view">
+        <field name="name">rastines.dokumentas.tree</field>
+        <field name="model">rastines.dokumentas</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="pavadinimas"/>
+                <field name="aprasymas"/>
+                <field name="imone_id"/>
+
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_dokumentu_perziura" model="ir.actions.act_window">
+        <field name="name">Dokumentai</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">rastines.dokumentas</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_rastai"
+              name="Rastai"
+              parent="menu_dokumentai_root"
+              action="action_dokumentu_perziura"
+              sequence="10"/>
+
+</odoo>
